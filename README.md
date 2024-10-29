@@ -1,7 +1,1 @@
-# VuejsNotes
-
-
-
-
-
-# ~~Creating a new branch is quick AND simple.~~
+i finally konw how to using git control system
