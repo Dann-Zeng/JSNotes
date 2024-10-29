@@ -1,0 +1,4 @@
+npm i json-server它的工作原理是它实际上会查看特定 JSON文件，它将使用它作为您的数据. 
+
+将本地的json文件复制一份 并在原json文件上 给整个文件外部包上一个大括号"{}" (或者说创建一个js对象将整个data数据包起来) 并创建属性名为jobs的属性 属性值为 原本json文件的全部数据(一个嵌套很深数组)  json-server 会将它当作接口来给你进行发请求去 '增删改查' 然后在package.json 文件中的脚本(scripts) 内加入一行"serve"(自定义): "json-server --watch src/jobs.json --port 8000" 这就是我们的后端 there we go
+

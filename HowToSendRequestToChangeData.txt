@@ -1,0 +1,7 @@
+First of all, you need to create a Object as the data you require to use. 
+
+The second,  using the v-model to connect all of  the view data to your Object you just create at step one.
+
+The third step,  register(注册)  @submit.prevent event for  whole form(or table)  and offer it's methord.
+
+第四步, 在方法中定义一个准备用来提交给后端的对象数据(数据内容就是第一步的对象)

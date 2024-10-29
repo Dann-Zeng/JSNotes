@@ -1,0 +1,21 @@
+多半是要建立一个管理所有请求代理(proxy)的文件
+
+打开vite.config.js文件 server下添加proxy属性 属性值为: 
+
+{
+
+'/api': {
+
+target: 'http://localhost:8000',
+
+changeOrigin: true,
+
+rewrite:  (path) => path.replace(/^\/api/, ''),
+
+}
+
+}
+
+回到我们要发请求的地方 比如在JobView.vue中把全本的http://localhost:8000 改成了/api
+
+然后没了...

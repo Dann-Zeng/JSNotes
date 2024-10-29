@@ -1,0 +1,42 @@
+1. 安装vue-router
+
+   如果在使用cli(脚手架)的时候没有勾选router选项, 那么需要在项目上重新安装它, 因为他不是框架自带的. 使用npm i vue-router 进行安装
+
+2. 在src(source)文件夹下创建router文件夹, 并在router下创建index.js
+
+   在index.js下导入 createRouter createWebHistory 组件 from 'vue-router'
+
+3. 在src(source)文件夹下创建views文件夹 并把App.vue上除了导航外的视图统统移走到Views 下的 HomeView.vue(新建) 
+
+4. 把HomeView 导入到index.js 并加入如下代码:
+
+   const router = createRouter({
+
+    history: createWebHistory(import.meta.env.BASE_URL),
+
+    routes: [
+
+     {
+
+      path: '/',
+
+      name: 'home',
+
+      component: HomeView,
+
+     },
+
+    ],
+
+   })
+
+   然后导出router
+
+5. 在main.js 下导入 roter from './router' (无需明确写出index.js 会隐式导入) 然后 把createApp 赋值app 并把语句拆分成来两块 然后在中间插入使用router的语句 => app.use(router)
+
+6. 最后在App.vue上导入RuterView from 'vue-router' 然后创建RouterView标签
+
+   
+
+   
+

@@ -1,0 +1,173 @@
+首先从vue中导入onMounted  在这个生命周期(maybe) 创建一个处理异步的箭头函数 既然是异步 开头别忘了 async  然后一个try catch 在前者中 定义常量 response(反应) 接收异步返回结果 然后 await 处理返回结果 axios.get(url) 发起请求  
+
+const response = await axios.get('URL');
+
+然后用jobs.value(前面已经定义的一个空数组) 接收response.data
+
+jobs.value = response.data;
+
+catch里面接收一个错误 并输出 错误
+
+catch(error) {
+
+console.error('Error fetching jobs', error);
+
+}
+
+
+
+<!--关于axios:--> 
+
+Axios 是一个基于 Promise 的 HTTP 客户端，用于浏览器和 Node.js 环境中发送 HTTP 请求。
+
+axios返回的响应对象(response)包含多个属性，其中 .data 是实际服务器返回的数据。完整的响应对象结构如下：
+
+```
+{
+  // 服务器返回的实际数据
+  data: {},
+
+  // HTTP 状态码
+  status: 200,
+
+  // HTTP 状态信息
+  statusText: 'OK',
+
+  // 响应头信息
+  headers: {},
+
+  // axios请求的配置信息
+  config: {},
+
+  // 原始的请求对象
+  request: {}
+}
+```
+
+<!--***补充axios属性部分: form ChatGPT***-->
+
+在 `axios` 中，`get` 和 `post` 是最常用的 HTTP 请求方法，用来和服务器进行数据交互。除了 `get` 和 `post`，`axios` 还支持其他 HTTP 请求方法，每种方法有不同的用途：
+
+### 1. `get` 请求
+
+- **用途**：通常用于从服务器请求数据，比如获取资源、查询信息等。
+
+- **特点**：数据通过 URL 参数（查询字符串）发送到服务器。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.get('https://api.example.com/items')
+    .then(response => console.log(response.data))
+    .catch(error => console.error(error));
+  ```
+
+### 2. `post` 请求
+
+- **用途**：用于向服务器发送数据，比如创建新资源、提交表单等。
+
+- **特点**：数据通过请求体（body）发送到服务器，适合传输较大或复杂的数据。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.post('https://api.example.com/items', { name: 'NewItem' })
+    .then(response => console.log(response.data))
+    .catch(error => console.error(error));
+  ```
+
+### 3. 其他请求方法
+
+除了 `get` 和 `post`，`axios` 还支持以下方法：
+
+#### `put`
+
+- **用途**：更新服务器上的资源，通常用于替换一个已有的资源。
+
+- **特点**：`put` 请求通常要求提供完整的资源对象。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.put('https://api.example.com/items/1', { name: 'UpdatedItem' })
+    .then(response => console.log(response.data))
+    .catch(error => console.error(error));
+  ```
+
+#### `patch`
+
+- **用途**：更新资源的部分内容，而不覆盖整个资源。
+
+- **特点**：传递的对象只包含要更新的部分属性。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.patch('https://api.example.com/items/1', { name: 'PatchedItem' })
+    .then(response => console.log(response.data))
+    .catch(error => console.error(error));
+  ```
+
+#### `delete`
+
+- **用途**：删除服务器上的资源。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.delete('https://api.example.com/items/1')
+    .then(response => console.log('Item deleted'))
+    .catch(error => console.error(error));
+  ```
+
+#### `head`
+
+- **用途**：获取与 `get` 请求相同的响应头，但不返回响应体。
+
+- **特点**：适合用于检查资源是否存在或查看资源的元数据。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.head('https://api.example.com/items')
+    .then(response => console.log(response.headers))
+    .catch(error => console.error(error));
+  ```
+
+#### `options`
+
+- **用途**：用于查看服务器支持的请求方法，通常用于跨域资源共享（CORS）的请求。
+
+- 示例
+
+  ：
+
+  ```
+  javascript复制代码axios.options('https://api.example.com/items')
+    .then(response => console.log(response.headers['allow']))
+    .catch(error => console.error(error));
+  ```
+
+### 总结
+
+- `get`：获取资源。
+- `post`：创建新资源。
+- `put`：替换现有资源。
+- `patch`：部分更新资源。
+- `delete`：删除资源。
+- `head`：查看资源的元数据。
+- `options`：查看服务器支持的请求方法。
+
+这些方法各有不同的应用场景，根据你要进行的操作选择最合适的方法。
