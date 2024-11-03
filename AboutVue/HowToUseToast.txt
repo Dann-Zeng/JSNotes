@@ -1,0 +1,8 @@
+1. 安装toast 使用命令 npm i vue-toastification@next
+2. 在main.js中导入 Toast from 'vue-toastification'
+3. 再导入 'vue-toastification/dist/index.css' (无需from)
+4. 然后app.use(Toast)即可使用
+5. 在需要使用的组件或者视图文件中 导入 {useToast} form 'vue-toastification'
+6. 然后需要在 创建一个常量(一般都叫toast)来使用 const toast = useToast();
+7.  在请求异步的代码下 放入toast.success("成功需要显示的消息") toast.error('失败显示的消息')
+
