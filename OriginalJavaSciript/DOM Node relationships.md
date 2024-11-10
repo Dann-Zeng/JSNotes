@@ -2,25 +2,25 @@
 
 
 
-![d5e052b0c27bcfd7d83a5e679e0dc65](D:\weChat\WeChat Files\wxid_k5ec5wi5aalc22\FileStorage\Temp\d5e052b0c27bcfd7d83a5e679e0dc65.png)
+![DomNodeRelationship](E:\JsNotes\OriginalJavaSciript\icons\DomNodeRelationship.png)
 
 
 
 ### DOM Element Relationships
 
-![8a25918102c20024e35fbe6c6d4e2d1](D:\weChat\WeChat Files\wxid_k5ec5wi5aalc22\FileStorage\Temp\8a25918102c20024e35fbe6c6d4e2d1.png)
+![DomElementRelationship](E:\JsNotes\OriginalJavaSciript\icons\DomElementRelationship.png)
 
 
 
 ### Event Listeners
 
-![eebb68b5406183c1f3bfcf3fcb14592](D:\weChat\WeChat Files\wxid_k5ec5wi5aalc22\FileStorage\Temp\eebb68b5406183c1f3bfcf3fcb14592.png)
+![EventListeners](E:\JsNotes\OriginalJavaSciript\icons\EventListeners.png)
 
 
 
-The Event Object Attribute
+### The Event Object Attribute
 
-![a07bd9633c8bcdea27e893e91290ae1](D:\weChat\WeChat Files\wxid_k5ec5wi5aalc22\FileStorage\Temp\a07bd9633c8bcdea27e893e91290ae1.png)
+![TheEventObjectAttribute](E:\JsNotes\OriginalJavaSciript\icons\TheEventObjectAttribute.png)
 
 
 
