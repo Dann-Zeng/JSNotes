@@ -2,25 +2,25 @@
 
 
 
-![DomNodeRelationship](./icons\DomNodeRelationship.png)
+![DomNodeRelationship](./icons/DomNodeRelationship.png)
 
 
 
 ### DOM Element Relationships
 
-![DomElementRelationship](.\icons\DomElementRelationship.png)
+![DomElementRelationship](./icons/DomElementRelationship.png)
 
 
 
 ### Event Listeners
 
-![EventListeners](.\icons\EventListeners.png)
+![EventListeners](./icons/EventListeners.png)
 
 
 
 ### The Event Object Attribute
 
-![TheEventObjectAttribute](.\icons\TheEventObjectAttribute.png)
+![TheEventObjectAttribute](./icons/TheEventObjectAttribute.png)
 
 
 
