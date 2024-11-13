@@ -6,7 +6,9 @@
 
 ### 2.2简单句的构成
 
-##### ![image-20241110120123899](C:\Users\苏桓\AppData\Roaming\Typora\typora-user-images\image-20241110120123899.png)SV结构(主谓) => 不及物动词
+##### ![英语五大基本句型](pictures/基本句型.png)
+
+##### SV结构(主谓) => 不及物动词
 
 ##### SVP结构(主系表) => 系动词:
 
