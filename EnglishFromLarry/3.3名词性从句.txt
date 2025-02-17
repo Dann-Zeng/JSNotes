@@ -1,0 +1,28 @@
+同位语, 以及同位语从句
+同位语 = 针对抽象名词的名词性解释说明
+
+疑问词作主语, 则无需变更语序.
+What happened yesterday? 
+I don't know what happened yesterday.
+
+
+ENDWEIGHT
+句末重心
+头轻尾重
+
+形式主语
+It's true that Sally is Beautiful.
+
+形式宾语
+I find it unbelievable that Sally is beautiful.
+
+
+that的省略问题  
+省略that 的原则是 不影响理解就可以省
+结论: 全部不要省
+
+whether 和 if 能否互换的问题
+介词后面只能用whether
+后面是不定式 所以只能用whether
+可能导致歧义的情况下都不能用if
+结论: 全用whether

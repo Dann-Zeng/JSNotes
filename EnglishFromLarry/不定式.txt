@@ -1,0 +1,8 @@
+非谓语动词： 非动词 非谓语 
+不定式词性：形容词 名词 副词
+动名词词性： 名词
+分词词性： 形容词 副词	
+
+逻辑宾语问题：
+I need a pen to write. ❌
+I need a pen to write with. ✅
